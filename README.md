@@ -1,5 +1,3 @@
-git clone <repository-url>
-cd task
 
 # Install PHP dependencies
 composer install
@@ -14,9 +12,5 @@ php artisan migrate:fresh --seed
 
 php artisan jwt:secret
 
-JWT_SECRET=your_generated_secret
-JWT_TTL=60
-JWT_REFRESH_TTL=20160
 
-php artisan serve
 
