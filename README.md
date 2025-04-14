@@ -3,14 +3,15 @@
 composer install --no-dev --optimize-autoloader
 
 # Copy environment file
-cp .env.example .env and connect your db
+cp .env.example .env
+
 
 # Generate application key
-php artisan key:generate
+RUN php artisan migrate
 
-php artisan migrate:fresh --seed
+RUN php artisan migrate:fresh --seed
 
-php artisan jwt:secret
+RUN php artisan jwt:secret
 
 
 
