@@ -1,6 +1,6 @@
 
 # Install PHP dependencies
-composer install
+composer install --no-dev --optimize-autoloader
 
 # Copy environment file
 cp .env.example .env and connect your db
