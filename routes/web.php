@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-  dd(env('DB_HOST'));
+  
   return "test";
 });
